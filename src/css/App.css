@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.App .app_left {
+  -webkit-box-flex: 0.9;
+      -ms-flex: 0.9;
+          flex: 0.9;
+}
+
+.App .app_left .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.App .app_left .app_dropdown {
+  min-width: 100px;
+  margin-left: 10px;
+  height: 30px;
+}
+
+.App .app_left .app_dropdown img {
+  margin-right: 5px;
+}
+
+.App .app_left .app_stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.App .app_left .app_stats .infobox {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.App .app_left .app_stats .infobox:nth-child(n+2) {
+  margin-left: 10px;
+}
+
+.App .table {
+  margin-top: 20px;
+  overflow: scroll;
+  height: 400px;
+  background-color: white;
+  color: #6a5d5d;
+}
+
+.App .table span {
+  cursor: pointer;
+}
+
+.App .table tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .table td {
+  padding: 0.5rem;
+}
+
+.App .table .sorticon {
+  display: inline;
+  vertical-align: middle;
+  width: 16px;
+}
+
+.App .table tr:nth-of-type(odd) {
+  background-color: #f3f2f8;
+}
+
+@media screen and (max-width: 990px) {
+  .App {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .App .app_left {
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=App.css.map */
